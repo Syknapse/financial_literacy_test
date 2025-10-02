@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple light theme inspired by EU colours (but distinct) */
+:root{
+  --primary: #2b5ea8; /* eu-blue-soft */
+  --accent: #f1c21b;  /* eu-yellow-soft */
+  --bg: #f7f9fb;
+  --muted: #6b7280;
+}
+
+html,body,#__next{
+  height:100%;
+}
+
+body{
+  background-color:var(--bg);
+  color:#0f172a;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* header progress bar */
+.progress-track{
+  background-color:#e6eefc;
+  border-radius:9999px;
+  height:10px;
+}
+.progress-fill{
+  background:linear-gradient(90deg,var(--primary),#3b82f6);
+  height:10px;
+  border-radius:9999px;
+}
+
+/* small helper */
+.small-muted{ color:var(--muted); font-size:0.9rem; }
